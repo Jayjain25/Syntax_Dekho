@@ -1,0 +1,120 @@
+/* Resetting default margin and padding on the body */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Styling for the header */
+header {
+    background-color: black;
+    color: white;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 0 15px; /* Add padding to the sides */
+}
+
+/* Styling for the navigation within the header */
+nav {
+    font-size: 1rem; /* Use relative font size */
+}
+
+/* Styling for the box elements */
+.box {
+    border: 1px solid black;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* Styling for code snippets (syntax) */
+#if_syntax,
+#if_else_syntax,
+#switch_syntax,
+#for_syntax,
+#while_syntax,
+#do_syntax {
+    display: none;
+    width: 50%; /* Take up full width on smaller screens */
+    padding: 10px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    @media only screen and (min-width: 600px) {
+        width: 100%;
+    }
+}
+pre{
+    overflow: scroll;
+}
+
+/* Styling for code snippets (example) */
+#if_example,
+#if_else_example,
+#switch_example,
+#for_example,
+#while_example,
+#do_example {
+    display: none;
+    width: 50%; /* Take up full width on smaller screens */
+    padding: 10px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    @media only screen and (min-width: 600px) {
+        width: 100%;
+    }
+}
+
+/* Styling for buttons */
+.button {
+    background-color: #4CAF50; /* Green background color */
+    border: none; /* Remove border */
+    color: white; /* Text color */
+    padding: 10px 20px; /* Adjust padding */
+    text-align: center; /* Center text */
+    text-decoration: none; /* Remove underline from text */
+    display: inline-block; /* Make it an inline block */
+    font-size: 1rem; /* Use relative font size */
+    margin: 4px 0; /* Adjust margin */
+    cursor: pointer; /* Cursor on hover */
+    border-radius: 4px; /* Optional: Rounded corners */
+}
+
+/* Styling for paragraphs */
+.para {
+    font-size: 1.2rem; /* Use relative font size */
+    margin: 10px;
+    padding: 10px;
+}
+
+/* Media queries for responsiveness */
+@media only screen and (min-width: 600px) {
+    /* Adjust styles for screens with a minimum width of 600 pixels */
+    header {
+        height: 60px; /* Adjust height */
+    }
+
+    nav {
+        font-size: 1.2rem; /* Adjust font size */
+    }
+
+    .box {
+        margin: 15px;
+        padding: 15px;
+    }
+
+    .button {
+        padding: 12px 24px;
+    }
+
+    .para {
+        font-size: 1.4rem;
+    }
+    .buttonData{
+        overflow: auto;
+
+    }
+}
+
+/* Add more media queries as needed for larger screens */

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Syntax</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            Syntax Dekho
+        </nav>
+    </header>
+    <section>
+        <!-- Introduction -->
+        <h2>Syntax Of Control Flow</h2>
+        <p class="para"><b>What is Control Flow?</b></p>
+        <p class="para">Control flow refers to the order in which individual statements, instructions, or code blocks
+            are executed in a program. It determines the path that the program takes based on conditions and
+            decisions. In other words, control flow directs the flow of execution within a program, dictating
+            the order in which statements are executed.</p>
+
+        <!-- Control Flow Structures -->
+        <p class="para">There are several fundamental control flow structures in programming:</p>
+        <ul class="list">
+            <li><b>Sequential Execution:</b> Statements are executed one after the other, in the order in which
+                they appear in the code.</li>
+            <li><b>Conditional Statements:</b> Code branches based on a condition. Common structures include
+                `if`, `else if`, and `else`.</li>
+            <li><b>Looping Statements:</b> Code is repeated multiple times based on a condition. Common loop
+                structures include `for`, `while`, and `do-while`.</li>
+            <li><b>Switch Statements:</b> Allows a program to evaluate an expression against multiple possible
+                case values.</li>
+        </ul>
+
+        <p class="para">Control flow structures enable developers to create dynamic and flexible programs by making
+            decisions and executing specific blocks of code based on those decisions. The ability to control the
+            flow of a program is crucial for writing efficient, functional, and meaningful code.</p>
+
+        <hr>
+    </section>
+
+    <div class="box">
+        <div class="innerbox">
+            <h1 class="keyword">IF Syntax</h1>
+            <p class="disc">
+                The "if" statement is a fundamental control flow statement used to make decisions in code. It allows you
+                to execute a block of code if a specified condition is true. Here's the basic syntax of an "if"
+                statement in several programming languages:
+            </p>
+            <pre class="buttonData" id="if_syntax">
+if (condition) {
+    // Code to be executed if the condition is true
+    }
+    </pre>
+    <pre class="buttonData" id="if_example">
+var age = 25;
+
+if (age >= 18) {
+    console.log("You are an adult.");
+    } 
+
+    </pre>
+            <button type="submit" id="if" class="button" onclick="showData('if_syntax')">Show Syntax</button>
+            <button type="submit" id="ifex" class="button" onclick="showData('if_example')">Show Example</button>
+        </div>
+    </div>
+
+
+    <div class="box">
+        <div class="innerbox">
+            <h1 class="keyword">If Else Syntax</h1>
+            <p class="disc">
+
+                The if-else statement is a fundamental control flow structure in programming. It allows a program to
+                make decisions based on whether a specified condition is true or false. Here's a general description of
+                the if-else statement:
+            </p>
+            <pre class="buttonData" id="if_else_syntax">
+if (condition) {
+    // Code to be executed 
+    // if the condition is true
+} else {
+    // Code to be executed 
+    // if the condition is false
+}
+                </pre>
+                <pre class="buttonData" id="if_else_example">
+var age = 25;
+
+if (age >= 18) {
+    console.log("You are an adult.");
+} else {
+    console.log("You are a minor.");
+}
+
+                </pre>
+            <button type="submit" id="if" class="button" onclick="showData('if_else_syntax')">Show Syntax</button>
+            <button type="submit" id="switchex" onclick="showData('if_else_example')" class="button">Show Example</button>
+        </div>
+    </div>
+
+
+    <div class="box">
+        <div class="innerbox">
+            <h1 class="keyword">Switch Syntax</h1>
+            <p class="disc">
+                The switch statement is another control flow statement used in programming to evaluate an expression
+                against multiple possible case values. It provides an alternative to a series of if-else if-else
+                statements when you have a single expression with multiple possible matches. Here's the basic syntax for
+                the switch statement in various programming languages:
+            </p>
+            <pre class="buttonData" id="switch_syntax">
+switch (expression) {
+    case value1:
+        // Code to be executed 
+        // if expression matches value1
+        break;
+    case value2:
+        // Code to be executed 
+        // if expression matches value2
+        break;
+    // ... more cases
+    default:
+        // Code to be executed 
+        // if no case matches the expression
+}
+                    
+                </pre>
+                <pre class="buttonData" id="switch_example">
+var day = "Monday";
+
+switch (day) {
+    case "Monday":
+        console.log("It's the first day of the week.");
+        break;
+    case "Friday":
+        console.log("It's almost the weekend!");
+        break;
+    default:
+        console.log("It's a regular day.");
+}
+
+                </pre>
+            <button type="submit" class="button" onclick="showData('switch_syntax')">Show Syntax</button>
+            <button type="submit" id="ifelseex" class="button" onclick="showData('switch_example')">Show Example</button>
+        </div>
+    </div>
+
+
+    <div class="box">
+        <div class="innerbox">
+            <h1 class="keyword">For Loop Syntax</h1>
+            <p class="disc">
+                A for loop is a control flow statement that allows you to repeatedly execute a block of code for a specified number of times. The general syntax of a for loop varies slightly between programming languages, but the basic structure is similar. Here's a typical representation:
+            </p>
+            <pre class="buttonData" id="for_syntax">
+for (initialization; condition; update) {
+    // Code to be executed 
+    // in each iteration
+}                
+            </pre>
+            <pre class="buttonData" id="for_example">
+for (var i = 0; i < 5; i++) {
+    console.log(i);
+}                
+            </pre>
+            <button type="submit" onclick="showData('for_syntax')" class="button">Show Syntax</button>
+            <button type="submit" onclick="showData('for_example')" class="button">Show Example</button>
+        </div>
+    </div>
+
+
+    <div class="box">
+        <div class="innerbox">
+            <h1 class="keyword">While Loop Syntax</h1>
+            <p class="disc">
+                A while loop is another control flow statement that repeatedly executes a block of code as long as a specified condition is true. The loop continues to execute until the condition becomes false. The basic syntax of a while loop is as follows:
+            </p>
+            <pre class="buttonData" id="while_syntax">
+while (condition) {
+    // Code to be executed as long as 
+    // the condition is true
+}                
+            </pre>
+            <pre class="buttonData" id="while_example">
+var i = 0;
+while (i < 5) {
+    console.log(i);
+    i++;
+}
+
+            </pre>
+            <button type="submit" onclick="showData('while_syntax')" class="button">Show Syntax</button>
+            <button type="submit" onclick="showData('while_example')" class="button">Show Example</button>
+        </div>
+    </div>
+
+
+    <div class="box">
+        <div class="innerbox">
+            <h1 class="keyword">Do While Loop Syntax</h1>
+            <p class="disc">
+                A do-while loop is a control flow statement that is similar to the while loop, but with a crucial difference: the do-while loop guarantees that the block of code inside the loop is executed at least once, even if the loop condition is initially false. The general syntax is as follows:
+            </p>
+            <pre class="buttonData" id="do_syntax">
+do {
+// Code to be executed
+} while (condition);                
+            </pre>
+            <pre class="buttonData" id="do_example">
+var i = 0;
+do {
+    console.log(i);
+    i++;
+} while (i < 5);
+
+            </pre>
+            <button type="submit" onclick="showData('do_syntax')"  class="button">Show Syntax</button>
+            <button type="submit" onclick="showData('do_example')"  class="button">Show Example</button>
+        </div>
+    </div>
+</body>
+
+</html>
+
